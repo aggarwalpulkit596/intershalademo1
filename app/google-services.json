@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "298929452795",
+    "firebase_url": "https://internshalademo1.firebaseio.com",
+    "project_id": "internshalademo1",
+    "storage_bucket": "internshalademo1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298929452795:android:5079b978a736ba62",
+        "android_client_info": {
+          "package_name": "com.example.pulkit.internshala_demo1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298929452795-4hsb2v97gf90idlbpvg5j1kp5tu2k6d9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pulkit.internshala_demo1",
+            "certificate_hash": "13b9e817399e40a37ea6694b60a01947545c5bb7"
+          }
+        },
+        {
+          "client_id": "298929452795-4l3shclie57jk6u4rfmrea12pktiktf9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2n1xeqSGK7cHBgRSqTV3e0biE0jP5Khk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298929452795-4l3shclie57jk6u4rfmrea12pktiktf9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pulkit.internshala_demo1.UploadData">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:onClick="getimage"
+            android:layout_margin="10dp"
+            app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/imageView3"
+            android:hint="Full Name">
+
+            <EditText
+                android:id="@+id/nameeditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_toEndOf="@id/imageView3"
+            android:layout_margin="10dp"
+            android:hint="Mobile No.">
+
+            <EditText
+                android:id="@+id/mobileeditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="phone"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/addressline1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView3"
+            android:layout_margin="10dp"
+            android:hint="Address Line 1">
+
+            <EditText
+                android:id="@+id/addressline1editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPostalAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/addressline2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressline1"
+            android:layout_margin="10dp"
+            android:hint="Address Line 2">
+
+            <EditText
+                android:id="@+id/addressline2editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPostalAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/city"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressline2"
+            android:layout_margin="10dp"
+            android:hint="City">
+
+            <EditText
+                android:id="@+id/cityeditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPostalAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/city"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressline2"
+            android:layout_margin="10dp"
+            android:hint="State">
+
+            <EditText
+                android:id="@+id/stateeditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPostalAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/state"
+            android:layout_margin="10dp"
+            android:hint="Pincode">
+
+            <EditText
+                android:id="@+id/pincodeeditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nearestlandmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pincode"
+            android:layout_margin="10dp"
+            android:hint="Nearest Landmark">
+
+            <EditText
+                android:id="@+id/nearestlandmarkeditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPostalAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nearestlandmark"
+            android:layout_margin="10dp"
+            android:hint="Email ID">
+
+            <EditText
+                android:id="@+id/emailideditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/alernateno"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailid"
+            android:layout_margin="10dp"
+            android:hint="Alternate No.">
+
+            <EditText
+                android:id="@+id/alernatenoeditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="phone"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/landlineNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/alernateno"
+            android:layout_below="@id/emailid"
+            android:layout_margin="10dp"
+            android:hint="Landline No">
+
+            <EditText
+                android:id="@+id/landlineNoeditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Save Data"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:onClick="uploadData"
+            android:layout_below="@id/landlineNo"/>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
